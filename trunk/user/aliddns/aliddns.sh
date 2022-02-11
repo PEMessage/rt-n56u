@@ -110,6 +110,7 @@ fi
 }
 
 aliddns_check () {
+logger -t "【AliDDNS动态域名】" "Check Process"
 
 aliddns_get_status
 if [ "$aliddns_enable" != "1" ] && [ "$needed_restart" = "1" ] ; then
